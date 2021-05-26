@@ -2,6 +2,9 @@ package com.mmartynava.epam.fundamentals.optional.task1;
 
 import java.util.Scanner;
 
+//Ввести n чисел с консоли.
+//Найти число, состоящее только из различных цифр. Если таких чисел несколько, найти первое из них.
+
 public class OptionalTask4 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

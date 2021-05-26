@@ -2,6 +2,9 @@ package com.mmartynava.epam.fundamentals.optional.task1;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//Ввести n чисел с консоли.
+//Вывести числа в порядке возрастания (убывания) значений их длины.
+
 public class OptionalTask2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

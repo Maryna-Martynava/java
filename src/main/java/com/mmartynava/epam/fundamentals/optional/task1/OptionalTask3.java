@@ -1,6 +1,9 @@
 package com.mmartynava.epam.fundamentals.optional.task1;
 import java.util.Scanner;
 
+//Ввести n чисел с консоли.
+//Вывести на консоль те числа, длина которых меньше (больше) средней длины по всем числам, а также длину.
+
 public class OptionalTask3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

@@ -1,5 +1,9 @@
 package com.mmartynava.epam.fundamentals.optional.task1;
+
 import java.util.Scanner;
+
+//Ввести n чисел с консоли.
+//Найти самое короткое и самое длинное число. Вывести найденные числа и их длину.
 
 public class OptionalTask1 {
     public static void main(String[] args) {

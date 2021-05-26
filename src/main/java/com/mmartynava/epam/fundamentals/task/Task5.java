@@ -2,8 +2,12 @@ package com.mmartynava.epam.fundamentals.task;
 
 import java.util.Scanner;
 
+//Ввести число от 1 до 12. Вывести на консоль название месяца, соответствующего данному числу.
+// Осуществить проверку корректности ввода чисел.
+
 public class Task5 {
     public static void main(String[] args) {
+        System.out.println("Enter month number between(1-12):");
         Scanner scan = new Scanner(System.in);
         int month = scan.nextInt();
         switch (month) {

@@ -1,5 +1,8 @@
 package com.mmartynava.epam.fundamentals.task;
+
 import java.util.concurrent.ThreadLocalRandom;
+
+//  Вывести заданное количество случайных чисел с переходом и без перехода на новую строку
 
 public class Task3 {
     public static void main(String[] args) {
