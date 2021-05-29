@@ -12,23 +12,23 @@ public class BookMain {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Список асортимента книг");
-        for (int i = 0; i < bookbase().length; i++) {
-            System.out.println(bookbase()[i]);
+        for (int i = 0; i < bookBase().length; i++) {
+            System.out.println(bookBase()[i]);
         }
 
         //Book[] book_list = books();            // ручное заполнение
-        Book[] book_list = bookbase();           // автозаполнение
+        Book[] book_list = bookBase();           // автозаполнение
         System.out.println("----------a)Вывести список книг заданного автора;");
         System.out.print("Введите автора: ");
-        check_autor(book_list, scanner.next());
+        checkAuthor(book_list, scanner.next());
 
         System.out.println("----------b)Вывести список книг, выпущенных заданным издательством;");
         System.out.print("Введите издателя: ");
-        check_publisher(book_list, scanner.next());
+        checkPublisher(book_list, scanner.next());
 
         System.out.println("----------c)Вывести список книг, выпущенных после заданного года.");
         System.out.print("Введите год: ");
-        check_year(book_list, scanner.nextInt());
+        checkYear(book_list, scanner.nextInt());
 
     }
 
@@ -67,29 +67,29 @@ public class BookMain {
         return books;
     }
 
-    static Book[] bookbase() {
+    static Book[] bookBase() {
         Book[] book_list = new Book[6];
-        String[] autors1 = {"МарияСемёнова"};
-        book_list[0] = new Book(1, "Волкодав", autors1, "АСТ", 1994, 752, 19, "Твердый переплет");
-        String[] autors2 = {"МаргаретМитчелл"};
-        book_list[1] = new Book(2, "Унесенные ветром", autors2, "Эксмо", 2018, 768, 20, "Мягкий переплет");
-        String[] autors3 = {"ГюнтекинРешадНури"};
-        book_list[2] = new Book(3, "Птичка певчая", autors3, "Золак", 1991, 91, 11, "Мягкий переплет");
-        String[] autors4 = {"ЭрихМарияРемарк"};
-        book_list[3] = new Book(4, "Триумфальная арка", autors4, "АСТ", 2017, 640, 13, "Твердый переплет");
-        String[] autors5 = {"ЭрихМарияРемарк"};
-        book_list[4] = new Book(5, "Три товарища", autors5, "АСТ", 2016, 384, 13, "Твердый переплет");
-        String[] autors6 = {"АнтуандеСент-Экзюпери"};
-        book_list[5] = new Book(6, "Маленький принц", autors6, "Эксмо", 2018, 112, 11, "Твердый переплет");
+        String[] author1 = {"МарияСемёнова"};
+        book_list[0] = new Book(1, "Волкодав", author1, "АСТ", 1994, 752, 19, "Твердый переплет");
+        String[] author2 = {"МаргаретМитчелл"};
+        book_list[1] = new Book(2, "Унесенные ветром", author2, "Эксмо", 2018, 768, 20, "Мягкий переплет");
+        String[] author3 = {"ГюнтекинРешадНури"};
+        book_list[2] = new Book(3, "Птичка певчая", author3, "Золак", 1991, 91, 11, "Мягкий переплет");
+        String[] author4 = {"ЭрихМарияРемарк"};
+        book_list[3] = new Book(4, "Триумфальная арка", author4, "АСТ", 2017, 640, 13, "Твердый переплет");
+        String[] author5 = {"ЭрихМарияРемарк"};
+        book_list[4] = new Book(5, "Три товарища", author5, "АСТ", 2016, 384, 13, "Твердый переплет");
+        String[] author6 = {"АнтуандеСент-Экзюпери"};
+        book_list[5] = new Book(6, "Маленький принц", author6, "Эксмо", 2018, 112, 11, "Твердый переплет");
 
         return book_list;
     }
 
-    static void check_autor(Book[] books, String autor) {
+    static void checkAuthor(Book[] books, String autor) {
         for (Book book : books) {
-            String[] autors = book.getAutor();
+            String[] authors = book.getAutor();
 
-            for (String s : autors) {
+            for (String s : authors) {
                 if (s.equals(autor)) {
                     System.out.println(book.toString());
                     break;
@@ -98,7 +98,7 @@ public class BookMain {
         }
     }
 
-    static void check_publisher(Book[] books, String publisher) {
+    static void checkPublisher(Book[] books, String publisher) {
         for (Book book : books) {
             if (book.getPublisher().equals(publisher)) {
                 System.out.println(book.toString());
@@ -106,7 +106,7 @@ public class BookMain {
         }
     }
 
-    static void check_year(Book[] books, int year) {
+    static void checkYear(Book[] books, int year) {
         for (Book book : books) {
             if (year < book.getYear()) {
                 System.out.println(book.toString());

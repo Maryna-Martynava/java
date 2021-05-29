@@ -46,14 +46,6 @@ public class Book {
         this.id = id;
     }
 
-    int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -88,26 +80,14 @@ public class Book {
         } else System.out.println("Количестов не может быть меньше 1!");
     }
 
-    int getPages() {
-        return pages;
-    }
-
     void setPrice(int price) {
         if (price > 0) {
             this.price = price;
         } else System.out.println("Цена неможет быть отрицательной и нулевой!");
     }
 
-    int getPrice() {
-        return price;
-    }
-
     void setCover(String cover) {
         this.cover = cover;
-    }
-
-    String getCover() {
-        return cover;
     }
 
     @Override
