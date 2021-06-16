@@ -13,6 +13,6 @@ public class Task4 {
             n *= Integer.parseInt(args[i]);
         }
         System.out.println("The sum is " + num);
-        System.out.println("The sum is " + n);
+        System.out.println("The multiplication is " + n);
     }
 }

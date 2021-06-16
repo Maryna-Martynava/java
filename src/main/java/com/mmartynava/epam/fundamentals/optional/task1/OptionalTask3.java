@@ -1,4 +1,5 @@
 package com.mmartynava.epam.fundamentals.optional.task1;
+
 import java.util.Scanner;
 
 //Ввести n чисел с консоли.

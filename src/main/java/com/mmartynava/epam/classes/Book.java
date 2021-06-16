@@ -8,7 +8,7 @@ public class Book {
 
     private String name;
 
-    private String[] autor;
+    private String[] author;
 
     private String publisher;
 
@@ -23,7 +23,7 @@ public class Book {
     public Book() {
         this.id = 0;
         this.name = "";
-        this.autor = new String[0];
+        this.author = new String[0];
         this.publisher = "";
         this.year = 0;
         this.pages = 0;
@@ -31,10 +31,10 @@ public class Book {
         this.cover = "";
     }
 
-    public Book(int id, String name, String[] autor, String publisher, int year, int pages, int price, String cover) {
+    public Book(int id, String name, String[] author, String publisher, int year, int pages, int price, String cover) {
         this.id = id;
         this.name = name;
-        this.autor = autor;
+        this.author = author;
         this.publisher = publisher;
         this.year = year;
         this.pages = pages;
@@ -50,12 +50,12 @@ public class Book {
         this.name = name;
     }
 
-    void setAutor(String[] autor) {
-        this.autor = autor;
+    void setAuthor(String[] author) {
+        this.author = author;
     }
 
-    String[] getAutor() {
-        return autor;
+    String[] getAuthor() {
+        return author;
     }
 
     void setPublisher(String publisher) {
@@ -95,7 +95,7 @@ public class Book {
         return "Книга --- " +
                 "id=" + id +
                 ", Название=" + name +
-                ", Автор(ы)=" + Arrays.toString(autor) +
+                ", Автор(ы)=" + Arrays.toString(author) +
                 ", Издатель=" + publisher +
                 ", Год издания=" + year +
                 ", Количество страниц=" + pages +

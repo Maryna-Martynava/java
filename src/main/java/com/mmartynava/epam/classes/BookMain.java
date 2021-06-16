@@ -50,7 +50,7 @@ public class BookMain {
                 System.out.print("Введите автора: ");
                 mass[j] = scanner1.next();
             }
-            books[i].setAutor(mass);
+            books[i].setAuthor(mass);
 
             System.out.print("Введите издательство: ");
             books[i].setPublisher(scanner1.next());
@@ -87,7 +87,7 @@ public class BookMain {
 
     static void checkAuthor(Book[] books, String autor) {
         for (Book book : books) {
-            String[] authors = book.getAutor();
+            String[] authors = book.getAuthor();
 
             for (String s : authors) {
                 if (s.equals(autor)) {
